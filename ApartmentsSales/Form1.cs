@@ -22,8 +22,8 @@ namespace ApartmentsSales
             types.Add("Buy");
             types.Add("Sale");
 
-            this.saleRequestType.DataSource = types;
-            this.saleRequestTypeSearch.DataSource = types;
+            this.saleRequestType.DataSource = types.ToList();
+            this.saleRequestTypeSearch.DataSource = types.ToList();
 
             this.Update();
         }
